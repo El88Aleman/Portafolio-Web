@@ -1,0 +1,195 @@
+.primeraParte {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  margin-top: 150px;
+}
+.titulo {
+  display: flex;
+  text-align: center;
+  color: white;
+  margin-right: 100px;
+}
+.cv {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: white;
+  letter-spacing: 3px;
+  font-size: 24px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+  margin: 10px;
+}
+.cv:hover {
+  background: #00a7e6;
+  box-shadow: 0 0 10px #00a7e6, 0 0 40px #00a7e6, 0 0 80px #00a7e6;
+  transition-delay: 0.5s;
+}
+.cv span {
+  position: absolute;
+  display: block;
+}
+#span1 {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #00a7e6);
+}
+.cv:hover #span1 {
+  left: 100%;
+  transition: 1s;
+}
+#span2 {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #00a7e6);
+}
+.cv:hover #span2 {
+  right: 100%;
+  transition: 1s;
+}
+.segundaParte {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.iconos {
+  display: flex;
+  justify-content: center;
+}
+
+.linkedin,
+.github {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #00a7e6;
+  width: 60px; /* Ancho del círculo */
+  height: 60px; /* Alto del círculo */
+  border: 2px solid #00a7e6; /* Borde circular de color azul */
+  border-radius: 50%; /* Hace que el borde sea circular */
+  transition: 0.2s;
+  position: relative;
+  overflow: hidden;
+  margin: 5px;
+  box-shadow: 0 0 20px #00a7e6;
+}
+
+.linkedin:hover,
+.github:hover {
+  box-shadow: 0 0 20px #00a7e6, 0 0 40px #00a7e6, 0 0 80px #00a7e6; /* Efecto de brillo al pasar el mouse */
+  transition-delay: 0.5s;
+}
+.icon:hover {
+  transition-delay: 0.5s; /* Ajusta el brillo de los iconos al pasar el mouse */
+  width: 35px;
+  height: 35px;
+}
+.tilde {
+  color: #00a7e6;
+  margin: 5px;
+}
+.text {
+  color: white;
+}
+.html {
+  display: flex;
+  align-items: center;
+  color: black;
+  background-color: orangered;
+  margin: 5px;
+  padding: 3px;
+  letter-spacing: 3px;
+}
+.css {
+  display: flex;
+  align-items: center;
+  color: black;
+  background-color: dodgerblue;
+  margin: 5px;
+  padding: 3px;
+  letter-spacing: 3px;
+}
+
+.java {
+  display: flex;
+  align-items: center;
+  color: black;
+  background-color: yellow;
+  margin: 5px;
+  padding: 3px;
+  letter-spacing: 3px;
+}
+.mongo {
+  display: flex;
+  align-items: center;
+  color: black;
+  background-color: #2fc253;
+  margin: 5px;
+  padding: 3px;
+  letter-spacing: 3px;
+}
+.bootstrap {
+  display: flex;
+  align-items: center;
+  color: black;
+  background-color: #8500eb;
+  margin: 5px;
+  padding: 3px;
+  letter-spacing: 3px;
+}
+.react {
+  display: flex;
+  align-items: center;
+  color: black;
+  background-color: dodgerblue;
+  margin: 5px;
+  padding: 3px;
+  letter-spacing: 3px;
+}
+.corel {
+  display: flex;
+  align-items: center;
+  color: black;
+  background-color: #2fc253;
+  margin: 5px;
+  padding: 3px;
+  letter-spacing: 3px;
+}
+.photoshop {
+  display: flex;
+  align-items: center;
+  color: black;
+  background-color: dodgerblue;
+  margin: 5px;
+  padding: 3px;
+  letter-spacing: 3px;
+}
+.mui {
+  display: flex;
+  align-items: center;
+  color: black;
+  background-color: dodgerblue;
+  margin: 5px;
+  padding: 3px;
+  letter-spacing: 3px;
+}
+.express {
+  display: flex;
+  align-items: center;
+  color: black;
+  background-color: #e0e3e3;
+  margin: 5px;
+  padding: 3px;
+  letter-spacing: 3px;
+}

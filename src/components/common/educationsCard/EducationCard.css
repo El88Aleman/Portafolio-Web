@@ -1,0 +1,21 @@
+.education {
+  flex-wrap: wrap;
+  width: 800px;
+  height: 600px;
+  margin: 20px;
+}
+.special-card-1,
+.special-card-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.special-card-2,
+.special-card-4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
