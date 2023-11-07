@@ -1,17 +1,17 @@
 .project {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: center;
-  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  height: 150px;
   width: auto;
-  margin: 10px;
+  padding: 0;
+  text-align: center;
 }
 
 .github {
   display: inline-flex;
-  justify-content: center;
-  align-items: center;
   color: #00a7e6;
   width: 60px; /* Ancho del círculo */
   height: 60px; /* Alto del círculo */

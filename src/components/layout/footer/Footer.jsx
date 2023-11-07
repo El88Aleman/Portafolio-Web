@@ -1,42 +1,46 @@
-import { Button } from "react-bootstrap";
 import { SiGmail } from "react-icons/si";
 import { BsWhatsapp } from "react-icons/bs";
 import { ImLinkedin } from "react-icons/im";
 import "./Footer.css";
 
 const Footer = () => {
+  const handleWhatsappClick = () => {
+    window.open("https://wa.me/543425220425", "_blank");
+  };
+  const handleLinkedInClick = () => {
+    window.open(
+      "https://www.linkedin.com/in/franco-bertone-5b12b0267/",
+      "_blank"
+    );
+  };
+  const handleGmailClick = () => {
+    const destinatario = "francobertone10@gmail.com"; // Reemplaza con tu dirección de correo
+
+    const mailtoLink = `mailto:${destinatario}`;
+    window.open(mailtoLink, "_blank");
+  };
   return (
     <div className="footer">
-      <div className="titulo">
-        <h1>CONTACTOS</h1>
+      <div style={{ margin: "10px" }} className="copyRigth">
+        <h2 style={{ color: "white" }}>
+          © Copy Right 2023 Franco Bertone Portafolio Web
+        </h2>
       </div>
-      <div className="contenido">
+      <div style={{ margin: "10px", marginBottom: "10px" }} className="iconos">
         <div>
-          <Button style={{ fontSize: "20px", padding: 0 }} variant="none">
-            <SiGmail style={{ fontSize: "30px", color: "red" }} />
-          </Button>
+          <span className="gmail" onClick={handleGmailClick}>
+            <SiGmail className="icon" size={30} />
+          </span>
         </div>
         <div>
-          <Button
-            style={{ fontSize: "20px", padding: 0 }}
-            variant="none"
-            target="_blank"
-            href="https://wa.me/543425220425"
-          >
-            <BsWhatsapp style={{ fontSize: "30px", color: "limegreen" }} />
-          </Button>
+          <span className="whatsapp" onClick={handleWhatsappClick}>
+            <BsWhatsapp className="icon" size={30} />
+          </span>
         </div>
         <div>
-          <Button
-            href=""
-            style={{ fontSize: "20px", padding: 0 }}
-            variant="none"
-          >
-            <ImLinkedin style={{ fontSize: "30px", color: "dodgerblue" }} />
-          </Button>
-        </div>
-        <div className="copyRigth">
-          <h2>© Copy Right 2023 Franco Bertone Portafolio Web</h2>
+          <span className="linkedin" onClick={handleLinkedInClick}>
+            <ImLinkedin className="icon" size={30} />
+          </span>
         </div>
       </div>
     </div>

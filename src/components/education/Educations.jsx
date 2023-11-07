@@ -4,13 +4,7 @@ const Educations = ({ items }) => {
   return (
     <section className="educations">
       {items.map((item) => {
-        return (
-          <EducationsCard
-            key={item.id}
-            item={item}
-            specialClass={item.className}
-          />
-        );
+        return <EducationsCard key={item.id} item={item} />;
       })}
     </section>
   );

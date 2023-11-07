@@ -8,6 +8,7 @@ export const projects = [
       width: 200, // Ancho en píxeles
       height: 275, // Alto en píxeles
     },
+    className: "project1",
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ export const projects = [
       width: 200, // Ancho en píxeles
       height: 275, // Alto en píxeles
     },
+    className: "project2",
   },
   {
     id: 3,
@@ -28,6 +30,7 @@ export const projects = [
       width: 275, // Ancho en píxeles
       height: 250, // Alto en píxeles
     },
+    className: "project3",
   },
   {
     id: 4,
@@ -38,6 +41,7 @@ export const projects = [
       width: 270, // Ancho en píxeles
       height: 250, // Alto en píxeles
     },
+    className: "project4",
   },
   {
     id: 5,
@@ -48,6 +52,7 @@ export const projects = [
       width: 270, // Ancho en píxeles
       height: 250, // Alto en píxeles
     },
+    className: "project5",
   },
   {
     id: 6,
@@ -58,5 +63,6 @@ export const projects = [
       width: 250, // Ancho en píxeles
       height: 270, // Alto en píxeles
     },
+    className: "project6",
   },
 ];

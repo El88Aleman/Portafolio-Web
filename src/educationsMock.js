@@ -8,7 +8,8 @@ export const educations = [
         alt: "Imagen 1",
       },
     ],
-    className: "special-card-1",
+    className: "imagen1",
+    dataAos: "fade-right",
   },
   {
     id: 2,
@@ -19,7 +20,8 @@ export const educations = [
         alt: "Imagen 1",
       },
     ],
-    className: "special-card-2",
+    className: "imagen2",
+    dataAos: "fade-left",
   },
   {
     id: 3,
@@ -35,7 +37,8 @@ export const educations = [
         alt: "imagen 2",
       },
     ],
-    className: "special-card-3",
+    className: "imagen3",
+    dataAos: "fade-right",
   },
   {
     id: 4,
@@ -46,6 +49,7 @@ export const educations = [
         alt: "Imagen 1",
       },
     ],
-    className: "special-card-4",
+    className: "imagen4",
+    dataAos: "fade-left",
   },
 ];

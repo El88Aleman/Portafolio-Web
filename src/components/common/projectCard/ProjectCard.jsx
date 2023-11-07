@@ -7,7 +7,7 @@ const ProjectCard = ({ item }) => {
   };
   return (
     <div className="project">
-      <div>
+      <div data-aos="flip-up">
         <img
           style={{
             width: `${item.size.width}px`,
@@ -16,7 +16,9 @@ const ProjectCard = ({ item }) => {
           src={item.img}
           alt=""
         />
-        <h3 style={{ color: "white" }}>{item.title}</h3>
+        <h3 style={{ color: "white", marginBottom: "10px", marginTop: "10px" }}>
+          {item.title}
+        </h3>
         <span className="github" onClick={handleClick}>
           <ImGithub className="icon" size={30} />
         </span>

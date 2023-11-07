@@ -1,21 +1,26 @@
-.education {
-  flex-wrap: wrap;
-  width: 800px;
-  height: 600px;
-  margin: 20px;
+.container-fluid {
+  display: grid;
+  height: 550px;
+  width: auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
-.special-card-1,
-.special-card-3 {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+.imagen1 {
+  grid-column: 2/3;
+  grid-row: 1/2;
 }
-
-.special-card-2,
-.special-card-4 {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
+.imagen2 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.imagen3 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.imagen4 {
+  grid-column: 1/2;
+  grid-row: 4/5;
 }
