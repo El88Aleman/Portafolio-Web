@@ -6,16 +6,25 @@ import { SiAdobephotoshop, SiMongodb, SiMui } from "react-icons/si";
 import { GrReactjs } from "react-icons/gr";
 import { FaNodeJs } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
-import "./SobreMi.css";
+import "./ForMe.css";
 
 const SobreMi = () => {
+  const handleClickGitHub = () => {
+    window.open("https://github.com/El88Aleman", "_blank");
+  };
+  const handleClickLinkedIn = () => {
+    window.open(
+      "https://www.linkedin.com/in/franco-bertone-5b12b0267/",
+      "_blank"
+    );
+  };
   return (
     <div>
       <div className="primeraParte">
-        <Col style={{ marginLeft: "30px" }}>
+        <Col data-aos="zoom-in-right" style={{ marginLeft: "30px" }}>
           <Image
             src="https://res.cloudinary.com/dfcnmxndf/image/upload/v1698417605/um0a0rkia1utvius0c4l.png"
-            width="240px"
+            width="230px"
             height="300px"
             roundedCircle
           />
@@ -115,10 +124,10 @@ const SobreMi = () => {
             </a>
           </div>
           <div className="iconos">
-            <div className="linkedin">
+            <div className="linkedin" onClick={handleClickLinkedIn}>
               <ImLinkedin className="icon" size={30} />
             </div>
-            <div className="github">
+            <div className="github" onClick={handleClickGitHub}>
               <FaGithub className="icon" size={30} />
             </div>
           </div>

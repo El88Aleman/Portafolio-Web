@@ -60,8 +60,8 @@ export const projects = [
     title: "Proyecto BACKEND Juicy Boy ",
     img: "https://res.cloudinary.com/dfcnmxndf/image/upload/v1696364617/panf3mbuezm9ltdfcyl4.png",
     size: {
-      width: 250, // Ancho en píxeles
-      height: 270, // Alto en píxeles
+      width: 240, // Ancho en píxeles
+      height: 250, // Alto en píxeles
     },
     className: "project6",
   },

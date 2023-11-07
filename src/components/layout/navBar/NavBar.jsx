@@ -16,11 +16,11 @@ const NavBar = () => {
     const scrollY = window.scrollY;
 
     // Determinamos en qué sección estamos
-    if (scrollY < 900) {
+    if (scrollY < 950) {
       setActiveSection("forMe");
-    } else if (scrollY < 3000) {
+    } else if (scrollY < 3050) {
       setActiveSection("education");
-    } else if (scrollY < 3700) {
+    } else if (scrollY < 3900) {
       setActiveSection("project");
     } else {
       setActiveSection("contact");
