@@ -49,3 +49,11 @@
   font-weight: 700;
   transform: scale(1.5);
 }
+.menu-app {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .navBar {
+  }
+}

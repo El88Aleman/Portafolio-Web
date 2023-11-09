@@ -114,7 +114,7 @@ const SobreMi = () => {
           </div>
           <div>
             <a
-              href="../src/public/cv/CVFrancoBertone.pdf"
+              href="./cv/CVFrancoBertone.pdf"
               download="CVFrancoBertone.pdf"
               className="cv"
             >

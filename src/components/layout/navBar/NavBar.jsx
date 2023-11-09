@@ -28,6 +28,7 @@ const NavBar = () => {
   };
   return (
     <div className="navBar">
+      <div className="menu-app">&#9776;</div>
       <ul className="menu">
         <li className={activeSection === "forMe" ? "active" : ""}>
           <a href="#">FOR ME</a>
