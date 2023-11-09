@@ -5,4 +5,5 @@
 }
 #root {
   background: #323946;
+  overflow-x: hidden;
 }
