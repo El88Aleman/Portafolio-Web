@@ -10,12 +10,7 @@ const EducationsCard = ({ item }) => {
             {item.img.map((image) => (
               <Carousel.Item style={{ transform: "none" }} key={image.id}>
                 <img
-                  style={{
-                    width: "1000px",
-                    height: "550px",
-                    borderRadius: "20px",
-                  }}
-                  className="d-block w-100"
+                  className="d-block w-100 educationCard"
                   src={image.src}
                   alt={image.alt}
                 />
@@ -31,8 +26,7 @@ const EducationsCard = ({ item }) => {
           style={{ position: "relative" }}
         >
           <img
-            style={{ width: "1000px", height: "550px", borderRadius: "20px" }}
-            className="d-block w-100"
+            className="d-block w-100 educationCard"
             src={item.img[0].src}
             alt={item.img[0].alt}
           />

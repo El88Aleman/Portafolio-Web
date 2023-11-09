@@ -6,9 +6,10 @@ import { SiAdobephotoshop, SiMongodb, SiMui } from "react-icons/si";
 import { GrReactjs } from "react-icons/gr";
 import { FaNodeJs } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
+import curriculum from "./cv/CVFrancoBertone.pdf";
 import "./ForMe.css";
 
-const SobreMi = () => {
+const ForMe = () => {
   const handleClickGitHub = () => {
     window.open("https://github.com/El88Aleman", "_blank");
   };
@@ -17,6 +18,9 @@ const SobreMi = () => {
       "https://www.linkedin.com/in/franco-bertone-5b12b0267/",
       "_blank"
     );
+  };
+  const handleClickCv = () => {
+    window.open(curriculum, "_blank");
   };
   return (
     <div>
@@ -113,11 +117,7 @@ const SobreMi = () => {
             </div>
           </div>
           <div>
-            <a
-              href="./cv/CVFrancoBertone.pdf"
-              download="CVFrancoBertone.pdf"
-              className="cv"
-            >
+            <a className="cv" onClick={handleClickCv}>
               <span id="span1"></span>
               <span id="span2"></span>
               DESCARGAR CV
@@ -202,4 +202,4 @@ const SobreMi = () => {
   );
 };
 
-export default SobreMi;
+export default ForMe;

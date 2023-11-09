@@ -36,3 +36,21 @@
   width: 35px;
   height: 35px;
 }
+
+@media screen and (max-width: 768px) {
+  .project {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    height: 2500px;
+    width: auto;
+    padding: 0;
+    text-align: center;
+    margin-top: 70px;
+  }
+  .project3 img {
+    margin-top: 0;
+  }
+}
