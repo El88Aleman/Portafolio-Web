@@ -23,7 +23,7 @@ const ForMe = () => {
     window.open(curriculum, "_blank");
   };
   return (
-    <div>
+    <div className="forMe">
       <div className="primeraParte">
         <Col data-aos="zoom-in-right" style={{ marginLeft: "30px" }}>
           <Image
