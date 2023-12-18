@@ -68,11 +68,11 @@
     width: 90%;
   }
   .contenedor figure:hover > .capa h4 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: 30px;
     margin-bottom: 30px;
   }
   .contenedor figure:hover > .capa h5 {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
 }
