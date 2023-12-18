@@ -21,7 +21,7 @@ const NavBar = () => {
         setActiveSection("forMe");
       } else if (scrollY < 2750) {
         setActiveSection("education");
-      } else if (scrollY < 3300) {
+      } else if (scrollY < 3350) {
         setActiveSection("project");
       } else {
         setActiveSection("contact");

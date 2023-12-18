@@ -15,7 +15,7 @@ const Projects = () => {
           alt="Comuna de Franck"
         />
         <div className="capa">
-          <h4 style={{ fontSize: "1.5rem" }}>PROYECTO COMUNA DE FRANCK</h4>
+          <h4>PROYECTO COMUNA DE FRANCK</h4>
           <h5>
             Pagina desarrollada con React.js sobre la comuna de mi pueblo en la
             que explayo algunas cosas sobre el mismo
@@ -33,7 +33,7 @@ const Projects = () => {
           alt="Juicy Boy"
         />
         <div className="capa">
-          <h4 style={{ fontSize: "1.5rem" }}>PROYECTO JUICY BOY</h4>
+          <h4>PROYECTO JUICY BOY</h4>
           <h5>
             Workshop desarrollado con React.js sobre un emprendimiento propio de
             remeras Oversize
