@@ -8,8 +8,8 @@ const Projects = () => {
     window.open("https://juicy-boy-react.vercel.app/", "_blank");
   };
   return (
-    <div className="contenedor">
-      <figure>
+    <div className="contenedor" data-aos="flip-up">
+      <figure data-aos="flip-up">
         <img
           src="https://res.cloudinary.com/dfcnmxndf/image/upload/v1702896247/eue057sxrihv8fc9g4xw.png"
           alt="Comuna de Franck"
@@ -27,7 +27,7 @@ const Projects = () => {
           />
         </div>
       </figure>
-      <figure>
+      <figure data-aos="flip-up">
         <img
           src="https://res.cloudinary.com/dfcnmxndf/image/upload/v1702896247/egy1sheifc3t2dcts14g.png"
           alt="Juicy Boy"

@@ -1,6 +1,7 @@
 import { SiGmail } from "react-icons/si";
 import { BsWhatsapp } from "react-icons/bs";
 import { ImLinkedin } from "react-icons/im";
+import { FaArrowUp } from "react-icons/fa";
 import "./Footer.css";
 
 const Footer = () => {
@@ -18,6 +19,9 @@ const Footer = () => {
 
     const mailtoLink = `mailto:${destinatario}`;
     window.open(mailtoLink, "_blank");
+  };
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
     <div className="footer">
@@ -42,6 +46,11 @@ const Footer = () => {
             <ImLinkedin className="icon" size={30} />
           </span>
         </div>
+      </div>
+      <div style={{ marginTop: "20px" }}>
+        <span className="flecha " onClick={scrollToTop}>
+          <FaArrowUp className="icon" size={30} />
+        </span>
       </div>
     </div>
   );

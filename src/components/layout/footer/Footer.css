@@ -10,7 +10,8 @@
 
 .gmail,
 .whatsapp,
-.linkedin {
+.linkedin,
+.flecha {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +29,8 @@
 
 .gmail:hover,
 .whatsapp:hover,
-.linkedin:hover {
+.linkedin:hover,
+.flecha:hover {
   box-shadow: 0 0 20px #00a7e6, 0 0 40px #00a7e6, 0 0 80px #00a7e6; /* Efecto de brillo al pasar el mouse */
   transition-delay: 0.5s;
 }
