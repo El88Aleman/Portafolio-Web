@@ -17,21 +17,21 @@ const NavBar = () => {
     const width = window.innerWidth;
 
     if (width <= 480) {
-      if (scrollY < 1700) {
+      if (scrollY < 1600) {
         setActiveSection("forMe");
-      } else if (scrollY < 2900) {
+      } else if (scrollY < 2750) {
         setActiveSection("education");
-      } else if (scrollY < 5200) {
+      } else if (scrollY < 3300) {
         setActiveSection("project");
       } else {
         setActiveSection("contact");
       }
     } else if (width <= 768) {
-      if (scrollY < 1500) {
+      if (scrollY < 1400) {
         setActiveSection("forMe");
-      } else if (scrollY < 3450) {
+      } else if (scrollY < 3350) {
         setActiveSection("education");
-      } else if (scrollY < 5800) {
+      } else if (scrollY < 4100) {
         setActiveSection("project");
       } else {
         setActiveSection("contact");
@@ -39,9 +39,9 @@ const NavBar = () => {
     } else if (width <= 1024) {
       if (scrollY < 1150) {
         setActiveSection("forMe");
-      } else if (scrollY < 3700) {
+      } else if (scrollY < 3650) {
         setActiveSection("education");
-      } else if (scrollY < 6000) {
+      } else if (scrollY < 4400) {
         setActiveSection("project");
       } else {
         setActiveSection("contact");
@@ -49,9 +49,9 @@ const NavBar = () => {
     } else if (width >= 1024) {
       if (scrollY < 950) {
         setActiveSection("forMe");
-      } else if (scrollY < 3050) {
+      } else if (scrollY < 3000) {
         setActiveSection("education");
-      } else if (scrollY < 3900) {
+      } else if (scrollY < 3800) {
         setActiveSection("project");
       } else {
         setActiveSection("contact");

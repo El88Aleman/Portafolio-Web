@@ -28,7 +28,7 @@ const ForMe = () => {
         <Col data-aos="zoom-in-right" style={{ marginLeft: "30px" }}>
           <Image
             src="https://res.cloudinary.com/dfcnmxndf/image/upload/v1698417605/um0a0rkia1utvius0c4l.png"
-            width="230px"
+            width="220px"
             height="300px"
             roundedCircle
           />
@@ -36,7 +36,7 @@ const ForMe = () => {
         <div>
           <div className="titulo">
             <h1>
-              Hello &#128075; my name and surname is Franco Bertone!
+              Hello &#128075; my name is Franco Bertone!
               <span className="textTitle">
                 <Typewriter
                   words={[" I'am Programer Frontend"]}

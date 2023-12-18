@@ -25,6 +25,7 @@
   overflow: hidden;
   transition: 0.2s;
   margin: 10px;
+  cursor: pointer;
 }
 .cv:hover {
   background: #00a7e6;
@@ -96,6 +97,7 @@
   transition-delay: 0.5s; /* Ajusta el brillo de los iconos al pasar el mouse */
   width: 35px;
   height: 35px;
+  cursor: pointer;
 }
 .tilde {
   margin: 5px;
@@ -235,5 +237,6 @@
     overflow: hidden;
     transition: 0.2s;
     margin: 10px;
+    cursor: pointer;
   }
 }
