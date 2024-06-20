@@ -15,11 +15,8 @@ const Projects = () => {
           alt="Comuna de Franck"
         />
         <div className="capa">
-          <h4>PROYECTO COMUNA DE FRANCK</h4>
-          <h5>
-            Pagina desarrollada con React.js sobre la comuna de mi pueblo en la
-            que explayo algunas cosas sobre el mismo
-          </h5>
+          <h4>FRANCK COMMUNE PROJECT</h4>
+          <h5>Page developed with React.js for the commune of my town</h5>
           <LuExternalLink
             onClick={handleComunaClick}
             style={{ marginTop: "10px" }}
@@ -33,10 +30,9 @@ const Projects = () => {
           alt="Juicy Boy"
         />
         <div className="capa">
-          <h4>PROYECTO JUICY BOY</h4>
+          <h4>JUICY BOY PROJECT</h4>
           <h5>
-            Workshop desarrollado con React.js sobre un emprendimiento propio de
-            remeras Oversize
+            Workshop developed with React.js for an Oversize T-shirt startup
           </h5>
           <LuExternalLink
             onClick={handleJuicyClick}

@@ -27,7 +27,7 @@ const Footer = () => {
     <div className="footer">
       <div style={{ margin: "10px" }} className="copyRigth">
         <h2 style={{ color: "white" }}>
-          © Copyright 2023 Franco Bertone Portafolio Web
+          © Copyright 2023 Franco Bertone Web Portfolio
         </h2>
       </div>
       <div style={{ margin: "10px", marginBottom: "10px" }} className="iconos">

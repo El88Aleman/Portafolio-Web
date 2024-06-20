@@ -27,8 +27,8 @@ const ForMe = () => {
       <div className="primeraParte">
         <Col data-aos="zoom-in-right" style={{ marginLeft: "30px" }}>
           <Image
-            src="https://res.cloudinary.com/dfcnmxndf/image/upload/v1698417605/um0a0rkia1utvius0c4l.png"
-            width="220px"
+            src="https://res.cloudinary.com/dfcnmxndf/image/upload/v1718750911/ifnggbh8q4lvtjtnry9n.png"
+            width="200px"
             height="300px"
             roundedCircle
           />
@@ -120,7 +120,7 @@ const ForMe = () => {
             <a className="cv" onClick={handleClickCv}>
               <span id="span1"></span>
               <span id="span2"></span>
-              DESCARGAR CV
+              DOWNLOAD CV
             </a>
           </div>
           <div className="iconos">
@@ -142,9 +142,8 @@ const ForMe = () => {
               height="40px"
               className="tilde"
             />
-            Tengo 26 años, me considero una persona responsable, pro-activa que
-            le gustaria formar parte de un grupo de trabajo en el que su
-            proposito sea el progreso y los desafios
+            I am an Argentine citizen with an Italian passport, I am 26 years
+            old and I am attracted to innovative things
           </h2>
         </div>
         <div style={{ margin: "10px" }}>
@@ -155,9 +154,9 @@ const ForMe = () => {
               height="40px"
               className="tilde"
             />
-            Mi objetivo es encontrar una empresa en la cual pueda demostrar mis
-            cualidades y en la que pueda desarrollar experiencia que me permita
-            crecer profesionalmente
+            Something more personal about me is that I am passionate about the
+            history of the old European continent... which led me to be very
+            self-taught in this sense
           </h2>
         </div>
         <div style={{ margin: "10px" }}>
@@ -168,33 +167,7 @@ const ForMe = () => {
               height="40px"
               className="tilde"
             />
-            Actualmente me encuentro desarrolando el curso de Backend para
-            convertirme en Desarrollador Full Stack
-          </h2>
-        </div>
-        <div style={{ margin: "10px" }}>
-          <h2 className="text">
-            <img
-              src="https://res.cloudinary.com/dfcnmxndf/image/upload/v1699044021/a76af34b02ocsuoijein.png"
-              width="50px"
-              height="40px"
-              className="tilde"
-            />
-            Tengo un curso pago de Desarrollo de Aplicaciones con React Native
-            el cual quiero desarrollar una vez terminado el curso actual
-          </h2>
-        </div>
-        <div style={{ margin: "10px" }}>
-          <h2 className="text">
-            <img
-              src="https://res.cloudinary.com/dfcnmxndf/image/upload/v1699044021/a76af34b02ocsuoijein.png"
-              width="50px"
-              height="40px"
-              className="tilde"
-            />
-            Tengo un emprendimiento textil en el cual estampo remeras y buzos
-            personalizados, hace poco inicie una marca propia de Remeras
-            Oversize
+            I like to make my own personalized clothes
           </h2>
         </div>
       </div>
