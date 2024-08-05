@@ -142,8 +142,8 @@ const ForMe = () => {
               height="40px"
               className="tilde"
             />
-            I am an Argentine citizen with an Italian passport, I am 26 years
-            old and I am attracted to innovative things
+            I am an Argentine citizen, I am 26 years old and I am attracted to
+            innovative things
           </h2>
         </div>
         <div style={{ margin: "10px" }}>
