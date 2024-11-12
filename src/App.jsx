@@ -9,8 +9,8 @@ function App() {
     <div>
       <NavBar />
       <ForMe />
-      <EducationsContainer />
       <Projects />
+      <EducationsContainer />
       <Footer />
     </div>
   );

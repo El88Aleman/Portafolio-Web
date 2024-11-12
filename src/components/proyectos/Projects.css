@@ -4,13 +4,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 800px;
+  height: auto;
   margin-top: 40px;
   margin-bottom: 40px;
 }
 .contenedor figure {
   position: relative;
-  height: 400px;
+  height: 350px;
   width: 50%;
   overflow: hidden;
   border-radius: 30px;
@@ -55,14 +55,10 @@
 }
 @media screen and (max-width: 1024px) {
   .contenedor figure {
-    height: 400px;
     width: 75%;
   }
 }
 @media screen and (max-width: 480px) {
-  .contenedor {
-    height: 600px;
-  }
   .contenedor figure {
     height: 200px;
     width: 90%;

@@ -7,6 +7,12 @@ const Projects = () => {
   const handleJuicyClick = () => {
     window.open("https://juicy-boy-react.vercel.app/", "_blank");
   };
+  const handleNbClick = () => {
+    window.open("https://nb-soluciones.com.ar/", "_blank");
+  };
+  const handleCasteBebidasClick = () => {
+    window.open("https://youtube.com/shorts/Qw6LLeKtRvk", "_blank");
+  };
   return (
     <div className="contenedor" data-aos="flip-up">
       <figure data-aos="flip-up">
@@ -36,6 +42,42 @@ const Projects = () => {
           </h5>
           <LuExternalLink
             onClick={handleJuicyClick}
+            style={{ marginTop: "10px" }}
+            size={30}
+          />
+        </div>
+      </figure>
+      <figure data-aos="flip-up">
+        <img
+          src="https://res.cloudinary.com/dfcnmxndf/image/upload/v1730292232/hwbvbl2vphtvbwi3epph.png"
+          alt="Nb Soluciones"
+        />
+        <div className="capa">
+          <h4>NB SOLUCIONES</h4>
+          <h5>
+            Page developed with React.js for Industrial Engineer Nicolas
+            Beresvil
+          </h5>
+          <LuExternalLink
+            onClick={handleNbClick}
+            style={{ marginTop: "10px" }}
+            size={30}
+          />
+        </div>
+      </figure>
+      <figure data-aos="flip-up">
+        <img
+          src="https://res.cloudinary.com/dfcnmxndf/image/upload/v1730293240/ewpmp5qk6lovkkcv4dpv.png"
+          alt="Caste Bebidas"
+        />
+        <div className="capa">
+          <h4>CASTE BEBIDAS</h4>
+          <h5>
+            Cell phone application developed with React Native for the beverage
+            distributor Caste Bebidas
+          </h5>
+          <LuExternalLink
+            onClick={handleCasteBebidasClick}
             style={{ marginTop: "10px" }}
             size={30}
           />

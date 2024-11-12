@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import "./NavBar.css";
-
 const NavBar = () => {
   const [activeSection, setActiveSection] = useState("forMe");
 
@@ -12,47 +11,36 @@ const NavBar = () => {
   }, []);
 
   const handleScroll = () => {
-    // Obtenemos la posición actual de desplazamiento
     const scrollY = window.scrollY;
     const width = window.innerWidth;
 
     if (width <= 480) {
       if (scrollY < 950) {
         setActiveSection("forMe");
-      } else if (scrollY < 2700) {
-        setActiveSection("education");
-      } else if (scrollY < 3100) {
+      } else if (scrollY < 2100) {
         setActiveSection("project");
+      } else if (scrollY < 3600) {
+        setActiveSection("education");
       } else {
         setActiveSection("contact");
       }
     } else if (width <= 768) {
-      if (scrollY < 600) {
+      if (scrollY < 650) {
         setActiveSection("forMe");
-      } else if (scrollY < 3350) {
-        setActiveSection("education");
-      } else if (scrollY < 4100) {
+      } else if (scrollY < 2350) {
         setActiveSection("project");
-      } else {
-        setActiveSection("contact");
-      }
-    } else if (width <= 1024) {
-      if (scrollY < 500) {
-        setActiveSection("forMe");
-      } else if (scrollY < 4000) {
+      } else if (scrollY < 5200) {
         setActiveSection("education");
-      } else if (scrollY < 4700) {
-        setActiveSection("project");
       } else {
         setActiveSection("contact");
       }
     } else if (width >= 1024) {
       if (scrollY < 300) {
         setActiveSection("forMe");
-      } else if (scrollY < 3250) {
-        setActiveSection("education");
-      } else if (scrollY < 4100) {
+      } else if (scrollY < 1950) {
         setActiveSection("project");
+      } else if (scrollY < 4900) {
+        setActiveSection("education");
       } else {
         setActiveSection("contact");
       }
@@ -65,11 +53,11 @@ const NavBar = () => {
         <li className={activeSection === "forMe" ? "active" : ""}>
           <a href="#">FOR ME</a>
         </li>
-        <li className={activeSection === "education" ? "active" : ""}>
-          <a href="#">EDUCATION</a>
-        </li>
         <li className={activeSection === "project" ? "active" : ""}>
           <a href="#">PROJECT</a>
+        </li>
+        <li className={activeSection === "education" ? "active" : ""}>
+          <a href="#">EDUCATION</a>
         </li>
         <li className={activeSection === "contact" ? "active" : ""}>
           <a href="#">CONTACT</a>
@@ -82,16 +70,6 @@ const NavBar = () => {
           width="80px"
           height="70px"
         />
-        <h1
-          style={{
-            color: "white",
-            marginLeft: "10px",
-            letterSpacing: "3px",
-          }}
-          className="reactLogo"
-        >
-          React
-        </h1>
       </a>
     </div>
   );

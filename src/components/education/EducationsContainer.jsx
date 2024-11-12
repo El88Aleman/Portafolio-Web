@@ -4,7 +4,6 @@ import Educations from "./Educations";
 
 const EducationsContainer = () => {
   const [items, setItems] = useState([]);
-
   useEffect(() => {
     const tarea = new Promise((resolve, reject) => {
       resolve(educations);
@@ -17,7 +16,11 @@ const EducationsContainer = () => {
 
     // .finally(()=>console.log("hola"))
   }, []);
-  return <Educations items={items} />;
+  return (
+    <div>
+      <Educations items={items} />
+    </div>
+  );
 };
 
 export default EducationsContainer;
