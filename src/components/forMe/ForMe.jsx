@@ -93,7 +93,7 @@ const ForMe = () => {
         <div style={{ margin: "10px" }}>
           <p className="text">
             <GoCheck className="tilde" size={30} />I am an Argentine citizen, I
-            am 26 years old and I am attracted to innovative things
+            am 27 years old and I am attracted to innovative things
           </p>
         </div>
         <div style={{ margin: "10px" }}>
