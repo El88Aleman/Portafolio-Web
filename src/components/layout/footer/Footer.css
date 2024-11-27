@@ -1,6 +1,4 @@
 .footer {
-  height: 300px;
-  background-color: #1f242d;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,23 +13,23 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  color: #00a7e6;
+  color: white;
   width: 60px; /* Ancho del círculo */
   height: 60px; /* Alto del círculo */
-  border: 2px solid #00a7e6; /* Borde circular de color azul */
+  border: 2px solid white; /* Borde circular de color azul */
   border-radius: 50%; /* Hace que el borde sea circular */
   transition: 0.2s;
   position: relative;
   overflow: hidden;
   margin: 5px;
-  box-shadow: 0 0 20px #00a7e6;
+  box-shadow: 0 0 20px white;
 }
 
 .github:hover,
 .whatsapp:hover,
 .linkedin:hover,
 .flecha:hover {
-  box-shadow: 0 0 20px #00a7e6, 0 0 40px #00a7e6, 0 0 80px #00a7e6; /* Efecto de brillo al pasar el mouse */
+  box-shadow: 0 0 20px white, 0 0 40px white, 0 0 80px white; /* Efecto de brillo al pasar el mouse */
   transition-delay: 0.5s;
 }
 .icon:hover {

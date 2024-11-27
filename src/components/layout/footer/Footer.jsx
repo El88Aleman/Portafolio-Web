@@ -10,11 +10,7 @@ const Footer = () => {
   };
   return (
     <div className="footer">
-      <div style={{ margin: "10px" }} className="copyRigth">
-        <h2 style={{ color: "white" }}>
-          © Copyright 2024 Franco Bertone Web Portfolio
-        </h2>
-      </div>
+      <div style={{ margin: "10px" }} className="copyRigth"></div>
       <div style={{ margin: "10px", marginBottom: "10px" }} className="iconos">
         <div>
           <a

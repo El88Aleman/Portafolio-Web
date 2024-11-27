@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 #root {
-  background: #323946;
   overflow-x: hidden;
+  background: linear-gradient(
+    45deg,
+    #1a0000,
+    /* Dark Burgundy */ #210101,
+    /* Very Dark Red */ #210101,
+    /* Dark Red */ #210101,
+    /* Deep Burgundy */ #1a0000 /* Very Dark Red */
+  );
 }

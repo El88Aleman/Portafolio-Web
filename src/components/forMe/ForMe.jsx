@@ -1,4 +1,4 @@
-import { Col, Image } from "react-bootstrap";
+import { useEffect, useRef } from "react";
 import { ImHtmlFive } from "react-icons/im";
 import { FaBootstrap, FaCss3, FaGithub, FaSass } from "react-icons/fa";
 import { RiJavascriptFill } from "react-icons/ri";
@@ -6,8 +6,7 @@ import { SiAdobephotoshop, SiMui } from "react-icons/si";
 import { ImPencil2 } from "react-icons/im";
 import { GrReactjs } from "react-icons/gr";
 import { FaNodeJs } from "react-icons/fa";
-import { GoCheck } from "react-icons/go";
-import { Typewriter } from "react-simple-typewriter";
+import { FaDatabase } from "react-icons/fa";
 import curriculum from "./cv/Cv-FrancoBertone.pdf";
 import "./ForMe.css";
 
@@ -15,100 +14,121 @@ const ForMe = () => {
   const handleClickCv = () => {
     window.open(curriculum, "_blank");
   };
+  const cardRef = useRef(null);
+
+  useEffect(() => {
+    const card = cardRef.current;
+
+    const handleMouseMove = (e) => {
+      const cardRect = card.getBoundingClientRect();
+      const isInBounds =
+        e.clientX >= cardRect.left &&
+        e.clientX <= cardRect.right &&
+        e.clientY >= cardRect.top &&
+        e.clientY <= cardRect.bottom;
+
+      if (!isInBounds) {
+        return;
+      }
+
+      const xPosition = (e.clientX - cardRect.left) / cardRect.width;
+      const yPosition = (e.clientY - cardRect.top) / cardRect.height - 0.6;
+      const xOffset = xPosition - 0.6;
+      const dxNorm = Math.min(Math.max(xOffset, -0.6), 0.6);
+
+      card.style.transform = `perspective(1000px) rotateY(${
+        dxNorm * 75
+      }deg) rotateX(${yPosition * 75}deg)`;
+    };
+
+    const handleMouseLeave = () => {
+      card.style.transform = "none";
+    };
+
+    card.addEventListener("mousemove", handleMouseMove);
+    card.addEventListener("mouseleave", handleMouseLeave);
+
+    return () => {
+      card.removeEventListener("mousemove", handleMouseMove);
+      card.removeEventListener("mouseleave", handleMouseLeave);
+    };
+  }, []);
+
   const skills = [
-    { icon: <ImHtmlFive size={30} />, name: "HTML5", bgClass: "bg-html" },
-    { icon: <FaCss3 size={30} />, name: "CSS3", bgClass: "bg-css" },
+    { icon: <ImHtmlFive size={20} />, name: "HTML5", bgClass: "bg-html" },
+    { icon: <FaCss3 size={20} />, name: "CSS3", bgClass: "bg-css" },
     {
-      icon: <RiJavascriptFill size={30} />,
+      icon: <RiJavascriptFill size={20} />,
       name: "JavaScript",
       bgClass: "bg-javascript",
     },
-    { icon: <GrReactjs size={30} />, name: "React", bgClass: "bg-react" },
-    { icon: <FaNodeJs size={30} />, name: "Node.js", bgClass: "bg-nodejs" },
+    { icon: <GrReactjs size={20} />, name: "React", bgClass: "bg-react" },
+    { icon: <FaNodeJs size={20} />, name: "Node.js", bgClass: "bg-nodejs" },
     {
-      icon: <FaBootstrap size={30} />,
+      icon: <FaBootstrap size={20} />,
       name: "Bootstrap",
       bgClass: "bg-bootstrap",
     },
-    { icon: <SiMui size={30} />, name: "MUI", bgClass: "bg-mui" },
-    { icon: <FaGithub size={30} />, name: "GitHub", bgClass: "bg-github" },
-    { icon: <FaSass size={30} />, name: "Sass", bgClass: "bg-sass" },
+    { icon: <SiMui size={20} />, name: "MUI", bgClass: "bg-mui" },
+    { icon: <FaGithub size={20} />, name: "GitHub", bgClass: "bg-github" },
+    { icon: <FaSass size={20} />, name: "Sass", bgClass: "bg-sass" },
     {
-      icon: <SiAdobephotoshop size={30} />,
+      icon: <SiAdobephotoshop size={20} />,
       name: "Photoshop",
       bgClass: "bg-photoshop",
     },
     {
-      icon: <ImPencil2 size={30} />,
+      icon: <ImPencil2 size={20} />,
       name: "Corel-Draw",
       bgClass: "bg-coreldraw",
     },
+    {
+      icon: <FaDatabase size={20} />,
+      name: "SQLite",
+      bgClass: "bg-sqlite",
+    },
   ];
   return (
-    <div className="forMe">
-      <div className="primeraParte">
-        <Col data-aos="zoom-in-right" style={{ marginLeft: "30px" }}>
-          <Image
-            src="https://res.cloudinary.com/dfcnmxndf/image/upload/v1718750911/ifnggbh8q4lvtjtnry9n.png"
-            width="200px"
-            height="300px"
-            roundedCircle
+    <div className="containerCarta" ref={cardRef}>
+      <div className="perspective">
+        <div className="fondoCarta" />
+        <div style={{ display: "flex" }}>
+          <p className="programer">PROGRAMER FRONTED</p>
+          <p className="nivel">Nivel PS 100</p>
+          <img
+            className="imgProgramer"
+            src="https://res.cloudinary.com/dfcnmxndf/image/upload/v1698878558/zwq1enrbjpzbortgl4u0.gif"
+            alt="react js"
           />
-        </Col>
+        </div>
         <div>
-          <div className="titulo">
-            <h1>
-              Hello &#128075; my name is Franco Bertone!
-              <span className="textTitle">
-                <Typewriter
-                  words={[" I'am Programer Frontend"]}
-                  loop={1}
-                  cursor
-                  cursorStyle="_"
-                  typeSpeed={70}
-                  deleteSpeed={50}
-                  delaySpeed={3000}
-                />
-              </span>
-            </h1>
-          </div>
-          <div className="skills-container">
-            {skills.map((skill, index) => (
-              <div key={index} className={`skill-item ${skill.bgClass}`}>
-                <span className="skill-icon">{skill.icon}</span>
-                <span className="skill-name">{skill.name}</span>
-              </div>
-            ))}
-          </div>
-          <div>
-            <a className="cv" onClick={handleClickCv}>
-              <span id="span1"></span>
-              <span id="span2"></span>
-              DOWNLOAD CV
-            </a>
-          </div>
+          <img
+            className="img1"
+            src="https://res.cloudinary.com/dfcnmxndf/image/upload/v1718750911/ifnggbh8q4lvtjtnry9n.png"
+            alt="Franco Bertone"
+          />
         </div>
-      </div>
-      <div className="segundaParte">
-        <div style={{ margin: "10px" }}>
-          <p className="text">
-            <GoCheck className="tilde" size={30} />I am an Argentine citizen, I
-            am 27 years old and I am attracted to innovative things
-          </p>
+        <div>
+          <hr className="separador1" />
+          <p className="skillText">SKILLS</p>
+          <div className="scroller">
+            <div className="scroller__inner">
+              {skills.concat(skills).map((skill, index) => (
+                <div key={index} className={`scrollerItem ${skill.bgClass}`}>
+                  <span className="skill-icon">{skill.icon}</span>
+                  <span className="skill-name">{skill.name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <hr className="separador2" />
         </div>
-        <div style={{ margin: "10px" }}>
-          <p className="text">
-            <GoCheck className="tilde" size={30} />
-            Something more personal about me is that I am passionate about the
-            history of the old European continent... which led me to be very
-            self-taught in this sense
-          </p>
-        </div>
-        <div style={{ margin: "10px" }}>
-          <p className="text">
-            <GoCheck className="tilde" size={30} />I like to make my own
-            personalized clothes
-          </p>
+        <div className="containerCv">
+          <a className="cv" onClick={handleClickCv}>
+            <span id="span1"></span>
+            <span id="span2"></span>
+            DOWNLOAD CV
+          </a>
         </div>
       </div>
     </div>

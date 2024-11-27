@@ -1,26 +1,181 @@
-.primeraParte {
+.containerCarta {
+  height: 100vh;
+  width: 100vw;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
-  text-align: center;
-  margin-top: 150px;
+  justify-content: center;
+  perspective: 1000px;
 }
-.titulo {
+.perspective {
+  width: 375px;
+  height: 500px;
+  position: relative;
+  transform-style: preserve-3d;
+}
+.containerCarta:hover .fondoCarta {
+  box-shadow: 20px 20px 30px rgba(255, 255, 255, 0.5);
+}
+.fondoCarta {
+  height: 500px;
+  width: 375px;
+  background: linear-gradient(
+    135deg,
+    #2c3e50 0%,
+    #8b9aa3 25%,
+    #2c3e50 50%,
+    #8b9aa3 75%,
+    #2c3e50 100% /* Azul Oscuro */
+  );
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
   display: flex;
-  text-align: center;
-  color: white;
-  margin-right: 100px;
-  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.2);
+  transition: box-shadow 0.4s ease-in-out;
+  cursor: pointer;
+}
+.fondoCarta::before {
+  content: "";
+  height: 490px;
+  width: 365px;
+  background-size: cover;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 1;
+  margin-left: 5px;
+  background: linear-gradient(
+    135deg,
+    #2c3e50 0%,
+    #8b9aa3 25%,
+    #2c3e50 50%,
+    #8b9aa3 75%,
+    #2c3e50 100% /* Azul Oscuro */
+  );
+}
+.fondoCarta::after {
+  content: "";
+  height: 650px;
+  width: 285px;
+  background: linear-gradient(
+    to right,
+    #2c3e50,
+    #bdc3c7,
+    #ffffff,
+    #bdc3c7,
+    #2c3e50
+  );
+  margin-left: 5px;
+  background-color: #f0f0f0;
+  animation: rotar 2s linear infinite;
+  visibility: hidden;
+}
+.perspective:hover .fondoCarta::after {
+  visibility: visible;
+}
+@keyframes rotar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.programer {
+  position: absolute;
+  z-index: 3;
+  top: 3%;
+  left: 6%;
+  transform: translate(-6%, -3%);
+  color: #2c3e50;
+  font-size: 10px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 10px;
+  font-family: "Bit-Wonder";
+}
+.nivel {
+  position: absolute;
+  z-index: 3;
+  top: 10%;
+  left: 70%;
+  transform: translate(-70%, -10%);
+  color: #2c3e50;
+  font-size: 10px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 10px;
+  font-family: "Bit-Wonder";
+}
+.imgProgramer {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 3;
+  top: 3%;
+  left: 95%;
+  transform: translate(-95%, -3%);
+}
+.img1 {
+  height: 300px;
+  width: 190px;
+  z-index: 2;
+  position: absolute;
+  background-size: cover;
+  top: 15%;
+  left: 52%;
+  transform: translate(-52%, -15%);
+  border-radius: 50px;
+}
+.skillText {
+  position: absolute;
+  z-index: 3;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  color: #2c3e50;
+  font-size: 10px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 10px;
+  font-family: "Bit-Wonder";
+}
+.separador1,
+.separador2 {
+  position: absolute;
+  z-index: 3;
+  height: 2px;
+  background-color: white;
+  margin: 10px 0;
+}
+.separador1 {
+  top: 66%;
+  left: 50%;
+  transform: translate(-50%, -66%);
+  width: 80%;
+}
+.separador2 {
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -85%);
+  width: 50%;
+}
+.containerCv {
+  position: absolute;
+  z-index: 3;
+  top: 97%;
+  left: 50%;
+  transform: translate(-50%, -97%);
 }
 .cv {
   text-align: center;
   position: relative;
   display: inline-block;
-  padding: 15px 30px;
+  padding: 5px 20px;
   color: white;
   letter-spacing: 3px;
-  font-size: 24px;
+  font-size: 16px;
   text-decoration: none;
   overflow: hidden;
   transition: 0.2s;
@@ -58,59 +213,83 @@
   right: 100%;
   transition: 1s;
 }
-.segundaParte {
+.scroller {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  margin-top: 20px;
-}
-.iconos {
-  display: flex;
-  justify-content: center;
-}
-.tilde {
-  margin: 5px;
-  color: #00a7e6;
-}
-.text {
-  color: white;
-  font-size: 28px;
-}
-/* Estilos generales */
-.skills-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 20px;
-}
-.skill-item {
-  display: flex;
-  align-items: center;
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.25rem;
-  font-size: 0.75rem;
-  transition: all 0.3s ease-in-out;
-  position: relative;
   overflow: hidden;
+  height: auto;
+  max-width: 300px;
+  position: absolute;
+  z-index: 3;
+  top: 84%;
+  left: 50%;
+  transform: translate(-50%, -84%);
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+}
+.scroller__inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start; /* Cambiar a `start` para que inicie desde el borde */
+  width: max-content; /* Esto asegura que el contenido se ajuste */
+  height: auto;
+  animation: slide 12s linear infinite;
+  gap: 1rem;
+  white-space: nowrap;
+}
+.scroller__inner:hover,
+.scrollerItem {
+  animation-play-state: paused;
 }
 
-.skill-item:hover {
+.scrollerItem {
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 12px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  font-family: "Sansation-Bold";
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(
+      -50%
+    ); /* Desplazar hasta la mitad del contenido duplicado */
+  }
+}
+
+.scrollerItem:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .skill-icon {
-  margin-right: 0.25rem;
+  margin-right: 5px;
 }
 
 .skill-name {
   color: white;
+  margin-right: 5px;
 }
 
 /* Efecto de brillo */
-.skill-item::after {
+.scrollerItem::after {
   content: "";
   position: absolute;
   top: -50%;
@@ -136,72 +315,58 @@
   }
 }
 
-/* Colores de fondo para cada habilidad */
 .bg-html {
   background-color: #e34c26;
 }
+
 .bg-css {
   background-color: #264de4;
 }
+
 .bg-javascript {
   background-color: #f0db4f;
 }
+
 .bg-react {
   background-color: #61dafb;
 }
+
 .bg-nodejs {
   background-color: #68a063;
 }
+
 .bg-bootstrap {
   background-color: #563d7c;
 }
+
 .bg-mui {
   background-color: #007fff;
 }
+
 .bg-github {
   background-color: #181717;
 }
+
 .bg-sass {
   background-color: #cc6699;
 }
+
 .bg-photoshop {
   background-color: #31a8ff;
 }
+
 .bg-coreldraw {
   background-color: #47a755;
 }
-.textTitle {
-  text-shadow: 0 0 5px #00a7e6;
-  font-weight: bold;
+
+.bg-sqlite {
+  background-color: #003b57; /* Cambiado a azul oscuro */
 }
-@media screen and (max-width: 768px) {
-  .primeraParte {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    margin-top: 100px;
-  }
-  .titulo {
-    display: flex;
-    text-align: center;
-    color: white;
-    margin-left: 70px;
-    margin-top: 30px;
-  }
-  .cv {
-    text-align: center;
-    position: relative;
-    display: inline-block;
-    padding: 12px 25px;
-    color: white;
-    letter-spacing: 3px;
-    font-size: 18px;
-    text-decoration: none;
-    overflow: hidden;
-    transition: 0.2s;
-    margin: 10px;
-    cursor: pointer;
-  }
+@font-face {
+  font-family: "Bit-Wonder";
+  src: url(../assets/Bit-Wonder.TTF);
+}
+@font-face {
+  font-family: "Sansation-Bold";
+  src: url(../assets/Sansation-Bold.ttf);
 }
