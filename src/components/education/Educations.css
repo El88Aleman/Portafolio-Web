@@ -1,31 +1,53 @@
 .containerEducation {
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-
-.containerEducation .education {
   display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
   justify-content: center;
-  padding: 10px;
-}
-
-.img1,
-.img2,
-.img3,
-.img4,
-.img5,
-.img6,
-.img7 {
-  height: 300px;
-  width: 375px;
-  border-radius: 5px;
+  align-items: center;
+  height: 100vh; /* Ajusta según el tamaño deseado de la sección */
+  width: 100%;
+  position: relative;
   overflow: hidden;
-  cursor: pointer;
 }
 
+.education {
+  position: relative;
+  width: 400px; /* Tamaño del carrusel */
+  height: 400px; /* Ajusta según el tamaño de las imágenes */
+  transform-style: preserve-3d;
+  transform: perspective(1100px);
+  animation: autoRun 20s linear infinite;
+}
+@keyframes autoRun {
+  from {
+    transform: perspective(1100px) rotateX(-16deg) rotateY(0deg);
+  }
+  to {
+    transform: perspective(1100px) rotateX(-16deg) rotateY(360deg);
+  }
+}
+.education:hover {
+  animation-play-state: paused; /* Pausa la rotación automática al hacer hover */
+}
+
+.item {
+  position: absolute;
+  inset: 0;
+  transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
+    translateZ(400px); /* Controla la distancia entre los elementos */
+  transition: transform 0.3s ease-in-out;
+}
+
+.item img {
+  height: 275px;
+  width: 375px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item img:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+}
 .popup-image {
   position: fixed;
   top: 0;
@@ -36,18 +58,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 100;
+  z-index: 2;
+  overflow: hidden; /* Evita el desplazamiento al mostrar el popup */
 }
 
 .popup-image .x {
   position: absolute;
   top: 20px;
   right: 20px;
-  font-size: 60px;
-  font-weight: bolder;
+  font-size: 50px;
+  font-weight: bold;
   color: #fff;
   cursor: pointer;
-  z-index: 101;
+  z-index: 3;
+  transition: transform 0.2s ease;
+  margin: 10px;
+}
+
+.popup-image .x:hover {
+  transform: scale(1.2); /* Efecto de agrandamiento al pasar el cursor */
 }
 
 .popup-image .img-expanded {
@@ -55,4 +84,50 @@
   max-height: 80%;
   border-radius: 5px;
   object-fit: contain;
+  animation: fadeIn 0.5s ease; /* Efecto de aparición */
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin: 10px;
+}
+
+button.prev:hover,
+button.next:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
+}
+
+button.prev {
+  left: 20px;
+}
+
+button.next {
+  right: 20px;
 }

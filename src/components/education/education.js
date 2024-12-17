@@ -1,6 +1,7 @@
 export const education = [
   {
     id: 1,
+    position: 1,
     img: [
       {
         id: 1,
@@ -11,6 +12,7 @@ export const education = [
   },
   {
     id: 2,
+    position: 2,
     img: [
       {
         id: 1,
@@ -21,21 +23,23 @@ export const education = [
   },
   {
     id: 3,
+    position: 3,
     img: [
       {
         id: 1,
-        src: "https://res.cloudinary.com/dfcnmxndf/image/upload/v1696459311/c9hbdaiwrlbft5tpanlg.png",
+        src: " https://res.cloudinary.com/dfcnmxndf/image/upload/v1696459311/nqbom8liblyyxrvnihq7.png",
         className: "img3",
       },
       {
         id: 2,
-        src: "https://res.cloudinary.com/dfcnmxndf/image/upload/v1696459311/nqbom8liblyyxrvnihq7.png",
+        src: "https://res.cloudinary.com/dfcnmxndf/image/upload/v1696459311/c9hbdaiwrlbft5tpanlg.png",
         className: "img4",
       },
     ],
   },
   {
     id: 4,
+    position: 4,
     img: [
       {
         id: 1,
@@ -46,6 +50,7 @@ export const education = [
   },
   {
     id: 5,
+    position: 5,
     img: [
       {
         id: 1,
