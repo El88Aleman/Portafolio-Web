@@ -1,32 +1,26 @@
-import { Carousel } from "react-bootstrap";
 import "./EducationCard.css";
 
 const EducationsCard = ({ item }) => {
   return (
-    <div className="container-fluid">
+    <div className="containerEducation">
       {Array.isArray(item.img) && item.img.length > 1 ? (
-        <div data-aos={item.dataAos} className={item.className}>
-          <Carousel ride="carousel" interval={5000}>
+        <div className={item.className}>
+          <div>
             {item.img.map((image) => (
-              <Carousel.Item style={{ transform: "none" }} key={image.id}>
+              <div style={{ transform: "none" }} key={image.id}>
                 <img
-                  className="d-block w-100 educationCard"
+                  className="educationCard"
                   src={image.src}
                   alt={image.alt}
                 />
-              </Carousel.Item>
+              </div>
             ))}
-          </Carousel>
+          </div>
         </div>
       ) : (
-        // Renderiza una sola imagen si no hay múltiples imágenes
-        <div
-          data-aos={item.dataAos}
-          className={item.className}
-          style={{ position: "relative" }}
-        >
+        <div className={item.className} style={{ position: "relative" }}>
           <img
-            className="d-block w-100 educationCard"
+            className="educationCard"
             src={item.img[0].src}
             alt={item.img[0].alt}
           />

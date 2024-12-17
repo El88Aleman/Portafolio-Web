@@ -1,16 +1,33 @@
-import EducationsContainer from "./components/education/EducationsContainer";
-import Footer from "./components/layout/footer/Footer";
-import ForMe from "./components/forMe/ForMe";
+import ForMe from "./components/forMe/forMe/ForMe";
+import Footer from "./components/footer/Footer";
 import Projects from "./components/proyectos/Projects";
+import Educations from "./components/education/Educations";
+import Loader from "./components/loader/Loader";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    const fakeDataFetch = setTimeout(() => {
+      setIsLoading(false);
+    }, 4000);
+
+    // Limpiar el timeout cuando el componente se desmonte
+    return () => clearTimeout(fakeDataFetch);
+  }, []);
   return (
-    <div>
-      <ForMe />
-      <Projects />
-      <EducationsContainer />
-      <Footer />
-    </div>
+    <>
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <>
+          <ForMe />
+          <Projects />
+          <Educations />
+          <Footer />
+        </>
+      )}
+    </>
   );
 }
 

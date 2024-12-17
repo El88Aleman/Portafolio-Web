@@ -1,74 +1,111 @@
-.contenedor {
-  width: 100%;
+.containerProjects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.containerTarjeta {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
   height: auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-.contenedor figure {
-  position: relative;
-  height: 350px;
-  width: 50%;
-  overflow: hidden;
-  border-radius: 30px;
-  box-shadow: 0px 15px 25px rgba(255, 255, 255, 0.75);
-  cursor: pointer;
-  margin: 40px;
-}
-.contenedor figure img {
-  width: 100%;
-  height: 100%;
-  transition: all 500ms ease-out;
-}
-.contenedor figure .capa {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.6);
-  transition: all 500ms ease-out;
-  opacity: 0;
-  visibility: hidden;
+  margin: 20px;
   text-align: center;
 }
-.contenedor figure:hover > .capa {
-  opacity: 1;
-  visibility: visible;
-}
-.contenedor figure:hover > .capa h4 {
-  color: black;
-  margin-bottom: 70px;
-  margin-top: 40px;
-  transition: all 500ms ease-out;
-}
-.contenedor figure:hover > img {
-  transform: scale(1.3);
-}
-.contenedor figure:hover > .capa h5 {
-  line-height: 1.5;
+.imgWrapper {
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 10px;
   width: 100%;
-  max-width: 300px;
-  margin: auto;
+  overflow: hidden;
+  transition: box-shadow 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
-@media screen and (max-width: 1024px) {
-  .contenedor figure {
-    width: 75%;
+.imgProjects {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hoverLayer {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  transition: left 0.8s ease-in-out;
+}
+.hoverLayer .hoverIcon {
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  transition: transform 0.4s ease;
+}
+.imgWrapper:hover {
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5);
+  transform: scale(1.05);
+}
+.hoverLayer .hoverIcon:hover {
+  transform: scale(1.4);
+}
+
+.imgWrapper:hover .hoverLayer {
+  left: 0;
+}
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: "Rounded";
+  height: 200px;
+}
+
+.separador {
+  position: relative;
+  height: 2px;
+  background-color: #ddd;
+  overflow: hidden;
+  margin: 20px 0;
+}
+.estrella-fugaz {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  box-shadow: 0 0 10px 5px white;
+  animation: mover 2s linear infinite;
+  overflow: hidden;
+}
+@keyframes mover {
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: 100%;
   }
 }
-@media screen and (max-width: 480px) {
-  .contenedor figure {
-    height: 200px;
-    width: 90%;
-  }
-  .contenedor figure:hover > .capa h4 {
-    font-size: 1.2rem;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  .contenedor figure:hover > .capa h5 {
-    font-size: 0.8rem;
-  }
+
+.titleProject {
+  font-size: 24px;
+}
+.textProject {
+  font-size: 18px;
+}
+@font-face {
+  font-family: "Rounded";
+  src: url(../assets/Rounded.otf);
 }

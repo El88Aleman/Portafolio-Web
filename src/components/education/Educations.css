@@ -1,0 +1,58 @@
+.containerEducation {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.containerEducation .education {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6,
+.img7 {
+  height: 300px;
+  width: 375px;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.popup-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.popup-image .x {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 101;
+}
+
+.popup-image .img-expanded {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 5px;
+  object-fit: contain;
+}

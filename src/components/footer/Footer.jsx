@@ -9,8 +9,9 @@ const Footer = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
-    <div className="footer">
-      <div style={{ margin: "10px" }} className="copyRigth"></div>
+    <div className="tituloContainer">
+      <p className="textTitulo">CONTACTS</p>
+      <hr className="separadorTitle" />
       <div style={{ margin: "10px", marginBottom: "10px" }} className="iconos">
         <div>
           <a

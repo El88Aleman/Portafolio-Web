@@ -1,0 +1,148 @@
+.skillText {
+  position: absolute;
+  z-index: 3;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  color: white;
+  font-size: 13px;
+  padding: 5px;
+  background-color: #1a242f;
+  border-radius: 10px;
+  font-family: "Designer";
+  overflow: hidden;
+}
+.separador1,
+.separador2 {
+  position: absolute;
+  z-index: 3;
+  height: 2px;
+  background-color: white;
+  margin: 10px 0;
+}
+.separador1 {
+  top: 66%;
+  left: 50%;
+  transform: translate(-50%, -66%);
+  width: 80%;
+}
+.separador2 {
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -85%);
+  width: 50%;
+}
+.scroller {
+  display: flex;
+  overflow: hidden;
+  height: auto;
+  max-width: 300px;
+  position: absolute;
+  z-index: 3;
+  top: 84%;
+  left: 50%;
+  transform: translate(-50%, -84%);
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+}
+.scroller__inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start; /* Cambiar a `start` para que inicie desde el borde */
+  width: max-content; /* Esto asegura que el contenido se ajuste */
+  height: auto;
+  animation: slide 12s linear infinite;
+  gap: 1rem;
+  white-space: nowrap;
+}
+.scroller__inner:hover,
+.scrollerItem {
+  animation-play-state: paused;
+}
+.scrollerItem {
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 12px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  font-family: "Sansation-Bold";
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(
+      -50%
+    ); /* Desplazar hasta la mitad del contenido duplicado */
+  }
+}
+.scrollerItem:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.skill-icon {
+  margin-right: 5px;
+}
+.skill-name {
+  color: white;
+  margin-right: 5px;
+}
+.bg-html {
+  background-color: #e34c26;
+}
+.bg-css {
+  background-color: #264de4;
+}
+.bg-javascript {
+  background-color: #f0db4f;
+}
+.bg-react {
+  background-color: #61dafb;
+}
+.bg-nodejs {
+  background-color: #68a063;
+}
+.bg-bootstrap {
+  background-color: #563d7c;
+}
+.bg-mui {
+  background-color: #007fff;
+}
+.bg-github {
+  background-color: #181717;
+}
+.bg-sass {
+  background-color: #cc6699;
+}
+.bg-photoshop {
+  background-color: #31a8ff;
+}
+.bg-coreldraw {
+  background-color: #47a755;
+}
+.bg-sqlite {
+  background-color: #003b57; /* Cambiado a azul oscuro */
+}
+@font-face {
+  font-family: "Designer";
+  src: url(../../assets/Designer.otf);
+}
+@font-face {
+  font-family: "Sansation-Bold";
+  src: url(../../assets/Sansation-Bold.ttf);
+}

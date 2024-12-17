@@ -1,15 +1,13 @@
-export const educations = [
+export const education = [
   {
     id: 1,
     img: [
       {
         id: 1,
         src: "https://res.cloudinary.com/dfcnmxndf/image/upload/v1696459312/oid9yyxnpxqqilwihk3h.png",
-        alt: "Imagen 1",
+        className: "img1",
       },
     ],
-    className: "imagen1",
-    dataAos: "fade-right",
   },
   {
     id: 2,
@@ -17,11 +15,9 @@ export const educations = [
       {
         id: 1,
         src: "https://res.cloudinary.com/dfcnmxndf/image/upload/v1696459312/gmnmwe7ptwlxiywrpkn0.png",
-        alt: "Imagen 2",
+        className: "img2",
       },
     ],
-    className: "imagen2",
-    dataAos: "fade-left",
   },
   {
     id: 3,
@@ -29,16 +25,14 @@ export const educations = [
       {
         id: 1,
         src: "https://res.cloudinary.com/dfcnmxndf/image/upload/v1696459311/c9hbdaiwrlbft5tpanlg.png",
-        alt: "imagen 3",
+        className: "img3",
       },
       {
         id: 2,
         src: "https://res.cloudinary.com/dfcnmxndf/image/upload/v1696459311/nqbom8liblyyxrvnihq7.png",
-        alt: "imagen 3",
+        className: "img4",
       },
     ],
-    className: "imagen3",
-    dataAos: "fade-right",
   },
   {
     id: 4,
@@ -46,11 +40,9 @@ export const educations = [
       {
         id: 1,
         src: "https://res.cloudinary.com/dfcnmxndf/image/upload/v1696459310/iuiym7iwlqotgnpe7fxu.jpg",
-        alt: "Imagen 4",
+        className: "img5",
       },
     ],
-    className: "imagen4",
-    dataAos: "fade-left",
   },
   {
     id: 5,
@@ -58,15 +50,13 @@ export const educations = [
       {
         id: 1,
         src: "https://res.cloudinary.com/dfcnmxndf/image/upload/v1718752276/xjenuh71g9bwur9mdeoy.png",
-        alt: "imagen 5",
+        className: "img6",
       },
       {
         id: 2,
         src: "https://res.cloudinary.com/dfcnmxndf/image/upload/v1718752276/ywhyljdmacysyyxi1ucc.png",
-        alt: "imagen 5",
+        className: "img7",
       },
     ],
-    className: "imagen5",
-    dataAos: "fade-right",
   },
 ];
