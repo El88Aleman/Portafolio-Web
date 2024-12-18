@@ -1,11 +1,60 @@
-.footer {
+.containerFooter {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 90%;
+  border: 2px solid white !important;
+  border-radius: 10px;
+  box-shadow: 0 0 20px white;
+  padding: 10px;
+}
+.labelTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Alinea el contenido del form a la izquierda */
+  font-family: "Rounded";
+  color: white;
+  width: 100%;
+  margin: 10px;
 }
 
+.labelText {
+  font-family: "Rounded";
+  color: #333;
+  width: 100%;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Rounded";
+  color: #333;
+  font-weight: bold;
+  background-color: white !important;
+  border: 2px solid white !important;
+  box-shadow: 0 0 20px white;
+  transition: 0.2s;
+  text-align: center;
+  min-width: 30%; /* Ancho mínimo */
+  margin: 20px;
+  font-size: 20px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.button:hover {
+  color: #333 !important;
+  box-shadow: 0 0 20px white, 0 0 40px white, 0 0 80px white;
+  transform: scale(1.1);
+}
 .github,
 .whatsapp,
 .linkedin,
@@ -24,6 +73,14 @@
   margin: 5px;
   box-shadow: 0 0 20px white;
 }
+.iconos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 20px;
+}
 
 .github:hover,
 .whatsapp:hover,
@@ -37,4 +94,17 @@
   width: 35px;
   height: 35px;
   cursor: pointer;
+}
+.mensajeAprobado {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  font-family: "Rounded";
+  color: white;
+}
+@font-face {
+  font-family: "Rounded";
+  src: url(../assets/Rounded.otf);
 }
