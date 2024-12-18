@@ -122,7 +122,7 @@ const Footer = () => {
                 >
                   <ImLinkedin className="icon" size={30} />
                 </a>
-                <span className="flecha " onClick={scrollToTop}>
+                <span className="flecha" onClick={scrollToTop}>
                   <FaArrowUp className="icon" size={30} />
                 </span>
               </div>

@@ -26,7 +26,7 @@ export const project = [
     hrefGit: "https://github.com/El88Aleman/nb-soluciones.git",
     titleProject: "NB SOLUCIONES",
     textoProject:
-      "Page developed with React.js for Industrial Engineer Nicolas Beresvil",
+      "Page developed PUBLISHED with React.js for Industrial Engineer Nicolas Beresvil",
   },
   {
     id: 4,
