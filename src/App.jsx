@@ -11,8 +11,6 @@ function App() {
     const fakeDataFetch = setTimeout(() => {
       setIsLoading(false);
     }, 4000);
-
-    // Limpiar el timeout cuando el componente se desmonte
     return () => clearTimeout(fakeDataFetch);
   }, []);
   return (

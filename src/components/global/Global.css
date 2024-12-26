@@ -43,6 +43,14 @@
   transform: rotate(30deg);
   animation: shine 1.5s infinite;
 }
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(-150px);
+  }
+}
 
 @keyframes shine {
   0% {
@@ -55,4 +63,10 @@
 @font-face {
   font-family: "Akira";
   src: url(../assets/Akira.otf);
+}
+@media (max-width: 480px) {
+  .textTitulo {
+    font-size: 30px;
+    text-shadow: 0 0 2px #e0f7ff;
+  }
 }

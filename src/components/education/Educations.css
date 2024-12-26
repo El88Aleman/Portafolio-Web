@@ -131,3 +131,58 @@ button.prev {
 button.next {
   right: 20px;
 }
+@media (max-width: 768px) {
+  .education {
+    width: 300px; /* Tamaño reducido del carrusel */
+    height: 300px; /* Ajusta según el tamaño de las imágenes */
+    transform: perspective(800px); /* Perspectiva ajustada */
+  }
+  .item {
+    transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
+      translateZ(250px); /* Distancia reducida entre los elementos */
+  }
+  .item img {
+    height: 150px;
+    width: 200px;
+  }
+}
+@media (max-width: 480px) {
+  .containerEducation {
+    height: 50vh; /* Ajusta según el tamaño deseado de la sección */
+    margin-top: 50px;
+  }
+  .education {
+    width: 200px; /* Tamaño reducido del carrusel */
+    height: 200px; /* Ajusta según el tamaño de las imágenes */
+    transform: perspective(600px); /* Perspectiva ajustada */
+  }
+  .item {
+    transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
+      translateZ(140px); /* Distancia reducida entre los elementos */
+  }
+  .item img {
+    height: 100px;
+    width: 140px;
+  }
+  button.prev,
+  button.next {
+    font-size: 14px;
+    width: 40px;
+    height: 40px;
+    top: 45%;
+    color: white;
+    margin: 0px;
+    background: none;
+  }
+  button.prev {
+    left: 0px;
+  }
+
+  button.next {
+    right: 0px;
+  }
+  button.prev:hover,
+  button.next:hover {
+    background: none;
+  }
+}

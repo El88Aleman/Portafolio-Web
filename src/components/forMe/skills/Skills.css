@@ -9,7 +9,7 @@
   padding: 5px;
   background-color: #1a242f;
   border-radius: 10px;
-  font-family: "Designer";
+  font-family: "Designer" !important;
   overflow: hidden;
 }
 .separador1,

@@ -1,10 +1,41 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import curriculum from "../cv/Cv-FrancoBertone.pdf";
 import Skills from "../skills/Skills";
 import "./ForMe.css";
 import "../../global/Global.css";
 
 const ForMe = () => {
+  const fhirstSectionRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+  useEffect(() => {
+    const options = {
+      rootMargin: "0px",
+      threshold: 0.1,
+    };
+
+    const observer = new IntersectionObserver(callbackFunction, options);
+    const currentSection = fhirstSectionRef.current;
+    if (currentSection) {
+      observer.observe(currentSection);
+    }
+
+    function callbackFunction(enteries) {
+      enteries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          entry.target.classList.add("loaded");
+          observer.unobserve(entry.target);
+        } else {
+          setIsVisible(false);
+        }
+      });
+    }
+    return () => {
+      if (currentSection) {
+        observer.unobserve(currentSection);
+      }
+    };
+  }, []);
   const handleClickCv = () => {
     window.open(curriculum, "_blank");
   };
@@ -48,7 +79,12 @@ const ForMe = () => {
   }, []);
 
   return (
-    <div className="tituloContainer">
+    <div
+      className={`tituloContainer first-section ${
+        isVisible ? "visible" : "hidden"
+      }`}
+      ref={fhirstSectionRef}
+    >
       <p className="textTitulo">FOR ME</p>
       <hr className="separadorTitle" />
       <div className="containerCarta" ref={cardRef}>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import "./Educations.css";
 import { education } from "./education";
 
@@ -7,29 +7,29 @@ const Educations = () => {
   const [currentImages, setCurrentImages] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handleImageClick = (images, index) => {
+  const handleImageClick = useCallback((images, index) => {
     setCurrentImages(images);
     setCurrentIndex(index);
     setIsPopupVisible(true);
-  };
+  }, []);
 
-  const handleClosePopup = () => {
+  const handleClosePopup = useCallback(() => {
     setIsPopupVisible(false);
     setCurrentImages([]);
     setCurrentIndex(0);
-  };
+  }, []);
 
-  const handlePrevImage = () => {
+  const handlePrevImage = useCallback(() => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? currentImages.length - 1 : prevIndex - 1
     );
-  };
+  }, [currentImages.length]);
 
-  const handleNextImage = () => {
+  const handleNextImage = useCallback(() => {
     setCurrentIndex((prevIndex) =>
       prevIndex === currentImages.length - 1 ? 0 : prevIndex + 1
     );
-  };
+  }, [currentImages.length]);
 
   return (
     <div className="tituloContainer">

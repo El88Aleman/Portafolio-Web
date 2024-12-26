@@ -5,6 +5,10 @@
   align-items: center;
   width: 100%;
   height: 100vh;
+  border: 2px solid white !important;
+  border-radius: 10px;
+  box-shadow: 0 0 20px white;
+  margin-top: 40px;
 }
 .form {
   display: flex;
@@ -12,9 +16,6 @@
   justify-content: center;
   align-items: center;
   min-width: 90%;
-  border: 2px solid white !important;
-  border-radius: 10px;
-  box-shadow: 0 0 20px white;
   padding: 10px;
 }
 .labelTitle {
@@ -38,6 +39,7 @@
   justify-content: center;
   align-items: center;
   font-family: "Rounded";
+  letter-spacing: 3px;
   color: #333;
   background-color: white !important;
   border: 2px solid white !important;
@@ -56,8 +58,7 @@
 }
 .github,
 .whatsapp,
-.linkedin,
-.flecha {
+.linkedin {
   display: inline-flex;
   justify-content: center;
   align-items: center;

@@ -1,16 +1,12 @@
 import { Button, Form } from "react-bootstrap";
 import { BsWhatsapp } from "react-icons/bs";
 import { ImLinkedin } from "react-icons/im";
-import { FaArrowUp } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 import "./Footer.css";
 
 const Footer = () => {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
   const [messageSent, setMessageSent] = useState(false);
   const form = useRef();
 
@@ -22,16 +18,12 @@ const Footer = () => {
         import.meta.env.VITE_EMAIL_SERVICES,
         import.meta.env.VITE_EMAIL_TEMPLATES,
         form.current,
-        {
-          publicKey: import.meta.env.VITE_PUBLIC_KEY,
-        }
+        import.meta.env.VITE_PUBLIC_KEY
       )
       .then(
         () => {
           setMessageSent(true);
-          setTimeout(() => {
-            scrollToTop();
-          }, 4000);
+          setTimeout(() => {}, 4000);
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -97,38 +89,35 @@ const Footer = () => {
               >
                 ENVIAR
               </Button>
-              <div className="iconos">
-                <a
-                  href="https://github.com/El88Aleman"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  className="github"
-                >
-                  <FaGithub className="icon" size={30} />
-                </a>
-                <a
-                  href="https://wa.me/3425220425"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  className="whatsapp"
-                >
-                  <BsWhatsapp className="icon" size={30} />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/franco-bertone-5b12b0267/"
-                  className="linkedin"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <ImLinkedin className="icon" size={30} />
-                </a>
-                <span className="flecha" onClick={scrollToTop}>
-                  <FaArrowUp className="icon" size={30} />
-                </span>
-              </div>
             </Form>
           </>
         )}
+        <div className="iconos">
+          <a
+            href="https://github.com/El88Aleman"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="github"
+          >
+            <FaGithub className="icon" size={30} />
+          </a>
+          <a
+            href="https://wa.me/3425220425"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="whatsapp"
+          >
+            <BsWhatsapp className="icon" size={30} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/franco-bertone-5b12b0267/"
+            className="linkedin"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <ImLinkedin className="icon" size={30} />
+          </a>
+        </div>
       </div>
     </div>
   );
