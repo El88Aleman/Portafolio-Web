@@ -18,7 +18,7 @@ const Skills = () => {
       name: "JavaScript",
       bgClass: "bg-javascript",
     },
-    { icon: <GrReactjs size={20} />, name: "React", bgClass: "bg-react" },
+    { icon: <GrReactjs size={20} />, name: "React JS", bgClass: "bg-react" },
     { icon: <FaNodeJs size={20} />, name: "Node.js", bgClass: "bg-nodejs" },
     {
       icon: <FaBootstrap size={20} />,
@@ -46,8 +46,6 @@ const Skills = () => {
   ];
   return (
     <div>
-      <hr className="separador1" />
-      <p className="skillText">SKILLS</p>
       <div className="scroller">
         <div className="scroller__inner">
           {skills.concat(skills).map((skill, index) => (
@@ -58,7 +56,6 @@ const Skills = () => {
           ))}
         </div>
       </div>
-      <hr className="separador2" />
     </div>
   );
 };
