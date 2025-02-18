@@ -1,6 +1,16 @@
 export const project = [
   {
     id: 1,
+    src: "https://res.cloudinary.com/dfcnmxndf/image/upload/v1739848711/anzoz5mta6aswn926ywe.png",
+    alt: "Club Vegge",
+    hrefEnlace: "https://www.clubvegge.com.ar/",
+    hrefGit: "https://github.com/El88Aleman/club-vegge",
+    titleProject: "CLUB VEGGE PROJECT",
+    textoProject:
+      "Online store developed PUBLISHED with React.js for Club Vegge",
+  },
+  {
+    id: 2,
     src: "https://res.cloudinary.com/dfcnmxndf/image/upload/v1702896247/eue057sxrihv8fc9g4xw.png",
     alt: "Comuna de Franck",
     hrefEnlace: "https://comuna-de-franck-react.vercel.app/",
@@ -9,7 +19,7 @@ export const project = [
     textoProject: "Page developed with React.js for the commune of my town",
   },
   {
-    id: 2,
+    id: 3,
     src: "https://res.cloudinary.com/dfcnmxndf/image/upload/v1702896247/egy1sheifc3t2dcts14g.png",
     alt: "Juicy-Boy",
     hrefEnlace: "https://juicy-boy-react.vercel.app/",
@@ -19,7 +29,7 @@ export const project = [
       "Workshop developed with React.js for an Oversize T-shirt startup",
   },
   {
-    id: 3,
+    id: 4,
     src: "https://res.cloudinary.com/dfcnmxndf/image/upload/v1730292232/hwbvbl2vphtvbwi3epph.png",
     alt: "Nb-Soluciones",
     hrefEnlace: "https://nb-soluciones.com.ar/",
@@ -29,7 +39,7 @@ export const project = [
       "Page developed PUBLISHED with React.js for Industrial Engineer Nicolas Beresvil",
   },
   {
-    id: 4,
+    id: 5,
     src: "https://res.cloudinary.com/dfcnmxndf/image/upload/v1734115551/ud1f0pgwlbytz2urjlrl.png",
     alt: "Caste-Bebidas",
     hrefEnlace: "https://youtube.com/shorts/Qw6LLeKtRvk",

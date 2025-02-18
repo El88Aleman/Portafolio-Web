@@ -2,14 +2,25 @@ import curriculum from "../cv/Cv-FrancoBertone.pdf";
 import Skills from "../skills/Skills";
 import "./ForMe.css";
 import "../../global/Global.css";
+import UseIntersectionObserver from "../../useIntersectingObserver/UseIntersectingObserver";
 
 const ForMe = () => {
   const handleClickCv = () => {
     window.open(curriculum, "_blank");
   };
+  const [visibleElements, setRef] = UseIntersectionObserver({
+    rootMargin: "0px",
+    threshold: 0.1,
+  });
 
   return (
-    <div className="tituloContainer">
+    <div
+      ref={setRef(0)}
+      data-id="titulo"
+      className={`tituloContainer ${
+        visibleElements.titulo ? "visible" : "hidden"
+      }`}
+    >
       <p className="textTitulo">FOR ME</p>
       <hr className="separadorTitle" />
       <div className="imgContainer">

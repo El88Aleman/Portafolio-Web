@@ -1,8 +1,13 @@
 import { useCallback, useState } from "react";
 import "./Educations.css";
 import { education } from "./education";
+import UseIntersectionObserver from "../useIntersectingObserver/UseIntersectingObserver";
 
 const Educations = () => {
+  const [visibleElements, setRef] = UseIntersectionObserver({
+    rootMargin: "0px",
+    threshold: 0.1,
+  });
   const [isPopupVisible, setIsPopupVisible] = useState(false);
   const [currentImages, setCurrentImages] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -32,7 +37,13 @@ const Educations = () => {
   }, [currentImages.length]);
 
   return (
-    <div className="tituloContainer">
+    <div
+      ref={setRef(0)}
+      data-id="titulo"
+      className={`tituloContainer ${
+        visibleElements.titulo ? "visible" : "hidden"
+      }`}
+    >
       <p className="textTitulo">EDUCATIONS</p>
       <hr className="separadorTitle" />
       <div className="containerEducation">

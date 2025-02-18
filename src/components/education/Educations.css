@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Ajusta según el tamaño deseado de la sección */
+  padding: 60px 0;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -13,15 +13,15 @@
   width: 400px; /* Tamaño del carrusel */
   height: 400px; /* Ajusta según el tamaño de las imágenes */
   transform-style: preserve-3d;
-  transform: perspective(1100px);
+  transform: perspective(1000px);
   animation: autoRun 20s linear infinite;
 }
 @keyframes autoRun {
   from {
-    transform: perspective(1100px) rotateX(-16deg) rotateY(0deg);
+    transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
   }
   to {
-    transform: perspective(1100px) rotateX(-16deg) rotateY(360deg);
+    transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
   }
 }
 .education:hover {
@@ -32,13 +32,13 @@
   position: absolute;
   inset: 0;
   transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
-    translateZ(400px); /* Controla la distancia entre los elementos */
+    translateZ(300px); /* Controla la distancia entre los elementos */
   transition: transform 0.3s ease-in-out;
 }
 
 .item img {
-  height: 275px;
-  width: 375px;
+  height: 250px;
+  width: 350px;
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -139,7 +139,7 @@ button.next {
   }
   .item {
     transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
-      translateZ(250px); /* Distancia reducida entre los elementos */
+      translateZ(200px); /* Distancia reducida entre los elementos */
   }
   .item img {
     height: 150px;
@@ -148,17 +148,17 @@ button.next {
 }
 @media (max-width: 480px) {
   .containerEducation {
-    height: 50vh; /* Ajusta según el tamaño deseado de la sección */
+    padding: 40px 0;
     margin-top: 50px;
   }
   .education {
-    width: 200px; /* Tamaño reducido del carrusel */
-    height: 200px; /* Ajusta según el tamaño de las imágenes */
+    width: 140px; /* Tamaño reducido del carrusel */
+    height: 140px; /* Ajusta según el tamaño de las imágenes */
     transform: perspective(600px); /* Perspectiva ajustada */
   }
   .item {
     transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
-      translateZ(140px); /* Distancia reducida entre los elementos */
+      translateZ(120px); /* Distancia reducida entre los elementos */
   }
   .item img {
     height: 100px;

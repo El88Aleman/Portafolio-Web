@@ -3,7 +3,8 @@
 }
 .imgContainer {
   position: relative;
-  margin-top: 120px;
+  margin-top: 100px;
+  margin-right: 50px;
 }
 
 .imgProgramer {
@@ -13,7 +14,24 @@
   border-radius: 50px;
   opacity: 0; /* Inicia invisible */
   transform: translateY(20px); /* Inicia desplazada hacia abajo */
-  animation: fadeInUp 1s ease-out forwards; /* Animación de desvanecimiento y desplazamiento */
+  animation: particleEffect 1.5s ease-out forwards; /* Animación de desvanecimiento y desplazamiento */
+}
+@keyframes particleEffect {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+    filter: blur(10px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(10px);
+    filter: blur(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
 }
 
 @keyframes fadeInUp {
@@ -22,6 +40,7 @@
     transform: translateY(0); /* Termina en su posición original */
   }
 }
+
 .reactLogoContainer {
   display: flex;
   align-items: center;
@@ -134,7 +153,7 @@
   display: inline-block;
   padding: 20px 30px;
   color: white;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
   font-size: 16px;
   text-decoration: none;
   overflow: hidden;

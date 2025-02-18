@@ -6,6 +6,7 @@ import { ImPencil2 } from "react-icons/im";
 import { GrReactjs } from "react-icons/gr";
 import { FaNodeJs } from "react-icons/fa";
 import { FaDatabase } from "react-icons/fa";
+import { IoLogoFirebase } from "react-icons/io5";
 import "./Skills.css";
 import "../../global/Global.css";
 
@@ -20,6 +21,11 @@ const Skills = () => {
     },
     { icon: <GrReactjs size={20} />, name: "React JS", bgClass: "bg-react" },
     { icon: <FaNodeJs size={20} />, name: "Node.js", bgClass: "bg-nodejs" },
+    {
+      icon: <IoLogoFirebase size={20} />,
+      name: "Firebase",
+      bgClass: "bg-html",
+    },
     {
       icon: <FaBootstrap size={20} />,
       name: "Bootstrap",

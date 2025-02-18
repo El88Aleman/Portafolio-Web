@@ -5,8 +5,13 @@ import { FaGithub } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 import "./Footer.css";
+import UseIntersectionObserver from "../useIntersectingObserver/UseIntersectingObserver";
 
 const Footer = () => {
+  const [visibleElements, setRef] = UseIntersectionObserver({
+    rootMargin: "0px",
+    threshold: 0.1,
+  });
   const [messageSent, setMessageSent] = useState(false);
   const form = useRef();
 
@@ -23,7 +28,9 @@ const Footer = () => {
       .then(
         () => {
           setMessageSent(true);
-          setTimeout(() => {}, 4000);
+          setTimeout(() => {
+            setMessageSent(false); // Reset messageSent after 4 seconds
+          }, 4000);
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -31,7 +38,13 @@ const Footer = () => {
       );
   };
   return (
-    <div className="tituloContainer">
+    <div
+      ref={setRef(0)}
+      data-id="titulo"
+      className={`tituloContainer ${
+        visibleElements.titulo ? "visible" : "hidden"
+      }`}
+    >
       <p className="textTitulo">CONTACTS</p>
       <hr className="separadorTitle" />
       <div className="containerFooter">
