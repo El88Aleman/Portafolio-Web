@@ -36,10 +36,7 @@ const ForMe = () => {
             <div className="reactCircle"></div>
             <span className="reactCore"></span>
           </div>
-          <div style={{ flexDirection: "column" }}>
-            <p className="reactJs">React JS</p>
-            <p className="reactNative">React Native</p>
-          </div>
+          <p className="reactText">React JS</p>
         </div>
       </div>
       <div style={{ marginTop: "50px", marginBottom: "20px", width: "100%" }}>
@@ -50,7 +47,8 @@ const ForMe = () => {
         <p className="textParrafo">
           Con una pasión por crear experiencias web interactivas y dinámicas, me
           especializo en el desarrollo de aplicaciones utilizando tecnologías
-          modernas como <strong>React, JavaScript, HTML y CSS. </strong> 🚀
+          modernas como{" "}
+          <strong>React JS, React Native, JavaScript, HTML y CSS. </strong> 🚀
         </p>
         <p className="textParrafo">
           Mi objetivo es siempre escribir código limpio, eficiente y mantenible,
