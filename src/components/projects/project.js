@@ -5,7 +5,7 @@ export const project = [
     alt: "Club Vegge",
     hrefEnlace: "https://www.clubvegge.com.ar/",
     hrefGit: "https://github.com/El88Aleman/club-vegge",
-    titleProject: "CLUB VEGGE PROJECT",
+    titleProject: "CLUB VEGGE",
     textoProject:
       "Tienda online desarrollada y PUBLICADA con React JS para Club Vegge",
   },
@@ -15,7 +15,7 @@ export const project = [
     alt: "Comuna de Franck",
     hrefEnlace: "https://comuna-de-franck-react.vercel.app/",
     hrefGit: "https://github.com/El88Aleman/Comuna-De-Franck-React.git",
-    titleProject: "FRANCK COMMUNE PROJECT",
+    titleProject: "COMUNA DE FRANCK",
     textoProject:
       "Pagina desarrollada con React JS para la comuna de mi pueblo",
   },
@@ -35,7 +35,7 @@ export const project = [
     alt: "Juicy-Boy",
     hrefEnlace: "https://juicy-boy-react.vercel.app/",
     hrefGit: "https://github.com/El88Aleman/Juicy-Boy-React.git",
-    titleProject: "JUICY BOY PROJECT",
+    titleProject: "JUICY BOY",
     textoProject:
       "Tienda online desarrollada con React JS para mi tienda de camisetas Oversize",
   },
@@ -55,7 +55,7 @@ export const project = [
     alt: "Fran-k",
     hrefEnlace: "https://fran-k.com.ar/",
     hrefGit: "https://github.com/El88Aleman/fran-k-official",
-    titleProject: "Fran-k",
+    titleProject: "FRAN-K",
     textoProject:
       "Pagina desarrollada y PUBLICADA con React JS para el artista musical Fran-k ",
   },

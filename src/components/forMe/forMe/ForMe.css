@@ -45,8 +45,8 @@
   display: flex;
   align-items: center;
   position: absolute;
-  top: -20%; /* Ajusta la posición vertical */
-  right: -80%; /* Ajusta la posición horizontal */
+  top: -25%; /* Ajusta la posición vertical */
+  right: -110%; /* Ajusta la posición horizontal */
 }
 .reactLogo {
   width: var(--width);
@@ -55,7 +55,8 @@
   perspective: 5000px;
   color: #61dafb;
 }
-.reactText {
+.reactJs,
+.reactNative {
   font-family: "Computerfont";
   font-size: 1.5rem;
   color: white;
@@ -224,15 +225,16 @@
     height: auto;
   }
   .reactLogoContainer {
-    top: -20%;
-    right: -60%;
+    top: -25%;
+    right: -80%;
   }
   .reactLogo {
     width: 20vmin;
     height: 20vmin;
   }
-  .reactText {
-    margin-right: 10px;
+  .reactJs,
+  .reactNative {
+    margin-right: 30px;
     font-size: 1.2rem;
   }
 }

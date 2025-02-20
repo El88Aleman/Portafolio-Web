@@ -1,4 +1,4 @@
-import curriculum from "../cv/FrancoBertoneCv.pdf";
+import curriculum from "../cv/CV-FrancoBertone.pdf";
 import Skills from "../skills/Skills";
 import "./ForMe.css";
 import "../../global/Global.css";
@@ -36,7 +36,10 @@ const ForMe = () => {
             <div className="reactCircle"></div>
             <span className="reactCore"></span>
           </div>
-          <p className="reactText">React JS</p>
+          <div style={{ flexDirection: "column" }}>
+            <p className="reactJs">React JS</p>
+            <p className="reactNative">React Native</p>
+          </div>
         </div>
       </div>
       <div style={{ marginTop: "50px", marginBottom: "20px", width: "100%" }}>
