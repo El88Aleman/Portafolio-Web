@@ -7,7 +7,7 @@ export const project = [
     hrefGit: "https://github.com/El88Aleman/club-vegge",
     titleProject: "CLUB VEGGE PROJECT",
     textoProject:
-      "Tienda online desarrollada y PUBLICADA con React.js para Club Vegge",
+      "Tienda online desarrollada y PUBLICADA con React JS para Club Vegge",
   },
   {
     id: 2,
@@ -17,30 +17,10 @@ export const project = [
     hrefGit: "https://github.com/El88Aleman/Comuna-De-Franck-React.git",
     titleProject: "FRANCK COMMUNE PROJECT",
     textoProject:
-      "Pagina desarrollada con React.js para la comuna de mi pueblo",
+      "Pagina desarrollada con React JS para la comuna de mi pueblo",
   },
   {
     id: 3,
-    src: "https://res.cloudinary.com/dfcnmxndf/image/upload/v1702896247/egy1sheifc3t2dcts14g.png",
-    alt: "Juicy-Boy",
-    hrefEnlace: "https://juicy-boy-react.vercel.app/",
-    hrefGit: "https://github.com/El88Aleman/Juicy-Boy-React.git",
-    titleProject: "JUICY BOY PROJECT",
-    textoProject:
-      "Tienda online desarrollada con React.js para mi tienda de camisetas Oversize",
-  },
-  {
-    id: 4,
-    src: "https://res.cloudinary.com/dfcnmxndf/image/upload/v1730292232/hwbvbl2vphtvbwi3epph.png",
-    alt: "Nb-Soluciones",
-    hrefEnlace: "https://nb-soluciones.com.ar/",
-    hrefGit: "https://github.com/El88Aleman/nb-soluciones.git",
-    titleProject: "NB SOLUCIONES",
-    textoProject:
-      "Página desarrollada y PUBLICADA con React.js para el Ingeniero Industrial Nicolas Beresvil",
-  },
-  {
-    id: 5,
     src: "https://res.cloudinary.com/dfcnmxndf/image/upload/v1734115551/ud1f0pgwlbytz2urjlrl.png",
     alt: "Caste-Bebidas",
     hrefEnlace: "https://youtube.com/shorts/Qw6LLeKtRvk",
@@ -48,5 +28,35 @@ export const project = [
     titleProject: "CASTE BEBIDAS",
     textoProject:
       "Aplicación para celular desarrollada con React Native para la distribuidora de bebidas Caste Bebidas",
+  },
+  {
+    id: 4,
+    src: "https://res.cloudinary.com/dfcnmxndf/image/upload/v1702896247/egy1sheifc3t2dcts14g.png",
+    alt: "Juicy-Boy",
+    hrefEnlace: "https://juicy-boy-react.vercel.app/",
+    hrefGit: "https://github.com/El88Aleman/Juicy-Boy-React.git",
+    titleProject: "JUICY BOY PROJECT",
+    textoProject:
+      "Tienda online desarrollada con React JS para mi tienda de camisetas Oversize",
+  },
+  {
+    id: 5,
+    src: "https://res.cloudinary.com/dfcnmxndf/image/upload/v1730292232/hwbvbl2vphtvbwi3epph.png",
+    alt: "Nb-Soluciones",
+    hrefEnlace: "https://nb-soluciones.com.ar/",
+    hrefGit: "https://github.com/El88Aleman/nb-soluciones.git",
+    titleProject: "NB SOLUCIONES",
+    textoProject:
+      "Página desarrollada y PUBLICADA con React JS para el Ingeniero Industrial Nicolas Beresvil",
+  },
+  {
+    id: 6,
+    src: "https://res.cloudinary.com/dfcnmxndf/image/upload/v1740054970/Fran-K/c7ed64gsgkffaf6jcaqq.png",
+    alt: "Fran-k",
+    hrefEnlace: "https://fran-k.com.ar/",
+    hrefGit: "https://github.com/El88Aleman/fran-k-official",
+    titleProject: "Fran-k",
+    textoProject:
+      "Pagina desarrollada y PUBLICADA con React JS para el artista musical Fran-k ",
   },
 ];
