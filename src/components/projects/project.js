@@ -7,7 +7,7 @@ export const project = [
     hrefGit: "https://github.com/El88Aleman/club-vegge",
     titleProject: "CLUB VEGGE PROJECT",
     textoProject:
-      "Online store developed PUBLISHED with React.js for Club Vegge",
+      "Tienda online desarrollada y PUBLICADA con React.js para Club Vegge",
   },
   {
     id: 2,
@@ -16,7 +16,8 @@ export const project = [
     hrefEnlace: "https://comuna-de-franck-react.vercel.app/",
     hrefGit: "https://github.com/El88Aleman/Comuna-De-Franck-React.git",
     titleProject: "FRANCK COMMUNE PROJECT",
-    textoProject: "Page developed with React.js for the commune of my town",
+    textoProject:
+      "Pagina desarrollada con React.js para la comuna de mi pueblo",
   },
   {
     id: 3,
@@ -26,7 +27,7 @@ export const project = [
     hrefGit: "https://github.com/El88Aleman/Juicy-Boy-React.git",
     titleProject: "JUICY BOY PROJECT",
     textoProject:
-      "Workshop developed with React.js for an Oversize T-shirt startup",
+      "Tienda online desarrollada con React.js para mi tienda de camisetas Oversize",
   },
   {
     id: 4,
@@ -36,7 +37,7 @@ export const project = [
     hrefGit: "https://github.com/El88Aleman/nb-soluciones.git",
     titleProject: "NB SOLUCIONES",
     textoProject:
-      "Page developed PUBLISHED with React.js for Industrial Engineer Nicolas Beresvil",
+      "Página desarrollada y PUBLICADA con React.js para el Ingeniero Industrial Nicolas Beresvil",
   },
   {
     id: 5,
@@ -46,6 +47,6 @@ export const project = [
     hrefGit: "https://github.com/El88Aleman/Caste-Bebidas-React-Native.git",
     titleProject: "CASTE BEBIDAS",
     textoProject:
-      "Cell phone application developed with React Native for the beverage distributor Caste Bebidas",
+      "Aplicación para celular desarrollada con React Native para la distribuidora de bebidas Caste Bebidas",
   },
 ];

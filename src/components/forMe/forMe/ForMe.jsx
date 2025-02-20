@@ -1,4 +1,4 @@
-import curriculum from "../cv/Cv-FrancoBertone.pdf";
+import curriculum from "../cv/FrancoBertoneCv.pdf";
 import Skills from "../skills/Skills";
 import "./ForMe.css";
 import "../../global/Global.css";
