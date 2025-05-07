@@ -21,7 +21,7 @@ const ForMe = () => {
         visibleElements.titulo ? "visible" : "hidden"
       }`}
     >
-      <p className="textTitulo">FOR ME</p>
+      <p className="textTitulo">ABOUT ME</p>
       <hr className="separadorTitle" />
       <div className="imgContainer">
         <img
